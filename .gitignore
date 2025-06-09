@@ -1,2 +1,7 @@
-data/
-logs/
+# Ignore everything in data/ and logs/
+data/*
+logs/*
+
+# Except the folders themselves
+!data/
+!logs/
