@@ -1,17 +1,23 @@
 # Kafka
 
-Foobar is a Python library for dealing with word pluralization.
-
 ## Installation
 
 ### Format Data Directory
 
-1. Generate uuid:
+1. Create new folder data
+
+2. Update config .\config\kraft\server.properties
+
+```
+log.dirs=data
+```
+
+3. Generate uuid:
 ```
 .\bin\windows\kafka-storage.bat random-uuid
 ```
 
-2. Copy uuid:
+4. Copy uuid:
 
 ```
 .\bin\windows\kafka-storage.bat format --cluster-id <uuid> --config config\kraft\server.properties
