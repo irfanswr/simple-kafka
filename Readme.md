@@ -41,14 +41,14 @@ Foobar is a Python library for dealing with word pluralization.
 .\bin\windows\kafka-topics.bat --list --bootstrap-server localhost:9092
 ```
 
-3. Run procedure (send message):
+3. Run producer (send message):
 ```
 .\bin\windows\kafka-console-producer.bat --topic uji-coba --bootstrap-server localhost:9092
 ```
 
 4. *Type your message*
 
-5. Open new terminal (receive message):
+5. Open new terminal, run consumer (receive message):
 
 ```
 .\bin\windows\kafka-console-consumer.bat --topic uji-coba --from-beginning --bootstrap-server localhost:9092
